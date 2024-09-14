@@ -123,6 +123,42 @@ body {
 .section-1 > .part-2 > .people-imgs > .person-1 > .person-info > h2,
 .section-1 > .part-2 > .people-imgs > .person-2 > .person-info > h2,
 .section-1 > .part-2 > .people-imgs > .person-3 > .person-info > h2 {
-  margin: 1rem 0 1rem 0;
+  margin-bottom: 0.75rem;
 }
 /* End Section 1 */
+/* Start Section 2 */
+.section-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 12rem 20rem;
+}
+.section-2 > .card-1,
+.section-2 > .card-2,
+.section-2 > .card-3,
+.section-2 > .card-4,
+.section-2 > .card-5,
+.section-2 > .card-6 {
+  padding: 2.5rem;
+  width: 30%;
+}
+.section-2 > .card-1 > h3,
+.section-2 > .card-2 > h3,
+.section-2 > .card-3 > h3,
+.section-2 > .card-4 > h3,
+.section-2 > .card-5 > h3,
+.section-2 > .card-6 > h3 {
+  color: #736d63;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+.section-2 > .card-1 > p,
+.section-2 > .card-2 > p,
+.section-2 > .card-3 > p,
+.section-2 > .card-4 > p,
+.section-2 > .card-5 > p,
+.section-2 > .card-6 > p {
+  color: #908f87;
+  font-size: 1.5rem;
+}
+/* End Section 2 */
