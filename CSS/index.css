@@ -177,7 +177,8 @@ nav > i[class="fa-solid fa-bars"] {
 }
 /* End Section 2 */
 
-/* Start Section 3 */
+
+  /* Start Section 3 */
   .section-images {
     position: relative;
     display: flex;
@@ -294,7 +295,7 @@ nav > i[class="fa-solid fa-bars"] {
 .blue-header{
   position: absolute;
   z-index: 2;
-  background-color: rgb(18, 18, 89);
+  background-color: var(--main-color-3);
   height: 4rem;
   width: 70%;
   left: 15%;
@@ -335,9 +336,28 @@ nav > i[class="fa-solid fa-bars"] {
 }
 .footer-section {
   background-color: var(--main-color-1); 
-  padding: 1.5rem;
+  padding: 2rem;
   color: white;
   font-weight: bold;
   text-align: center;
 }
 /* End of Section 4 */
+
+/* footer section */
+.footer {
+  background-color: var(--main-color-3);
+  color: white;
+  padding: 5rem;
+  text-align: center;
+}
+.footer-content{
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  padding: 5rem;
+}
+.footer-content a {
+  color: #fff; /* White link color */
+  text-decoration: none;
+  font-size: 2rem;}
+/* End of Footer */
