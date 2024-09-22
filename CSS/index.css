@@ -17,6 +17,16 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--main-color-2);
 }
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 37.5%;
+  }
+}
 /* Start Of Navigation Bar */
 nav {
   background-color: var(--main-color-1);
@@ -112,19 +122,11 @@ nav > i[class="fa-solid fa-bars"] {
   width: 30%;
 }
 @media screen and (max-width: 1024px) {
-  html {
-    font-size: 50%;
-  }
   .section-1 {
     display: block;
   }
   .section-1 > .part-1 {
     width: 100%;
-  }
-}
-@media screen and (max-width: 767px) {
-  html {
-    font-size: 37.5%;
   }
 }
 .section-1 > .part-2 {
@@ -329,11 +331,11 @@ nav > i[class="fa-solid fa-bars"] {
 }
 .section-images .text-content .button {
   background-color: var(--main-color-1);
-  color: white;
+  color: var(--main-color-2);
   padding: 1.5rem 2rem;
   font-size: 1.6rem;
   text-decoration: none;
-  border-radius: 2px;
+  border-radius: 0.2rem;
   display: inline-block;
 }
 /* Start Of Section 4 */
@@ -348,9 +350,9 @@ nav > i[class="fa-solid fa-bars"] {
 }
 .card {
   background-color: rgba(237, 235, 235, 0.781);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
   width: 30%;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   position: relative;
 }
 .blue-header {
@@ -363,7 +365,7 @@ nav > i[class="fa-solid fa-bars"] {
   bottom: 45%;
 }
 .blue-header h2 {
-  color: white;
+  color: var(--main-color-2);
   padding: 0.8rem;
   text-align: center;
   font-size: 1.2rem;
@@ -382,7 +384,7 @@ nav > i[class="fa-solid fa-bars"] {
   padding: 1rem 0;
 }
 .card-content p {
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #666666;
   padding: 1rem 0;
 }
@@ -393,25 +395,42 @@ nav > i[class="fa-solid fa-bars"] {
 .footer-section {
   background-color: var(--main-color-1);
   padding: 2rem;
-  color: white;
+  color: var(--main-color-2);
   font-weight: bold;
   text-align: center;
+}
+/* Start Of Section 5 */
+.section-5 {
+  padding: 1.4rem;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 1rem;
+}
+.section-5 > img {
+  width: 100%;
+  height: 100%;
 }
 /* Start Of Footer Section */
 .footer {
   background-color: var(--main-color-3);
-  color: white;
-  padding: 5rem;
+  color: var(--main-color-2);
   text-align: center;
+  padding: 5rem;
 }
 .footer-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 6rem;
   padding: 5rem;
 }
 .footer-content a {
-  color: #fff; /* White link color */
+  color: var(--main-color-2);
   text-decoration: none;
   font-size: 2rem;
+}
+@media screen and (max-width: 767px) {
+  .footer-content {
+    justify-content: left;
+  }
 }
