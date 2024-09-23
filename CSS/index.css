@@ -491,7 +491,7 @@ nav > i[class="fa-solid fa-bars"] {
 }
 .footer .footer-icons i {
   transition: var(--main-transition);
-  font-size: 3.5rem;
+  font-size: 3rem;
   padding: 1.5rem;
   border-radius: 50%;
   border: 0.5rem solid var(--main-color-2);
