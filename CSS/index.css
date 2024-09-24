@@ -179,7 +179,9 @@ nav > i[class="fa-solid fa-bars"] {
   }
   .section-1 > .part-2 > .people-imgs {
     display: flex;
-    left: 20rem;
+    justify-content: center;
+    gap: 1rem;
+    left: 0;
   }
   .section-1 > .part-2 > .people-imgs > .person-1,
   .section-1 > .part-2 > .people-imgs > .person-2,
@@ -198,9 +200,6 @@ nav > i[class="fa-solid fa-bars"] {
   }
 }
 @media screen and (max-width: 767px) {
-  .section-1 > .part-2 > .people-imgs {
-    left: 12rem;
-  }
   .section-1 > .part-2 > .people-imgs > .person-1 > .person-info,
   .section-1 > .part-2 > .people-imgs > .person-2 > .person-info,
   .section-1 > .part-2 > .people-imgs > .person-3 > .person-info {
@@ -401,7 +400,7 @@ nav > i[class="fa-solid fa-bars"] {
   font-weight: bold;
   text-align: center;
 }
-/* Start Of Section 5 */
+/* Start Of Gallery Section  */
 .section-5 {
   display: grid;
   grid-template-rows: auto auto auto auto;
@@ -462,6 +461,40 @@ nav > i[class="fa-solid fa-bars"] {
 .section-5 > img:nth-child(13) {
   grid-column-start: 5;
   grid-column-end: 9;
+}
+/* Start Of Form Section */
+.form-container {
+  padding: 10rem;
+}
+.form-container > .form {
+  background-color: var(--main-color-1);
+  padding: 3rem;
+}
+.form-container > .form > h3 {
+  color: var(--main-color-2);
+  text-align: center;
+  font-size: 3rem;
+  padding: 2rem;
+}
+.form-container > .form > form > input {
+  border: none;
+}
+.form-container > .form > form > input:first-child {
+  padding: 2.5rem;
+  border-radius: 4rem;
+  width: 30%;
+}
+.form-container > .form > form > input:first-child:focus-visible {
+  outline: none;
+}
+.form-container > .form > form > input[type="submit"] {
+  background-color: var(--main-color-3);
+  color: var(--main-color-2);
+  cursor: pointer;
+  border-radius: 2rem;
+  padding: 1.5rem 2rem;
+}
+.form-container > .form > form > input[type="submit"]:hover {
 }
 /* Start Of Footer Section */
 .footer {
